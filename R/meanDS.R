@@ -11,7 +11,7 @@
 
 meanDS <- function(xvect) {
   #check if the input vector is valid (i.e. meets DataShield privacy criteria)
-  check <- length(xvect) > 0 & length(xvect) < 5
+  check <- isValidDS(xvect)
   
   #return missing value if the input vector id not valid
   if(!check){
