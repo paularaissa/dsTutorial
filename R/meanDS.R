@@ -15,7 +15,7 @@ meanDS <- function(xvect) {
   
   #return missing value if the input vector id not valid
   if(!check){
-    result <- mean(xvect, na.rm = TRUE)
+    result <- sum(xvect, na.rm = TRUE)
   } else {
     result <- NA
   }
